@@ -1,4 +1,4 @@
-# Ejercicios de Clase del dia 30-09
+# Ejercicios de Clase del dia 30-09-2021
 En este repositorio se guardaran los ejercicios de clase del dia 30-09-2021
 
 ### Ejercicio 1
