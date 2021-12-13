@@ -7,7 +7,7 @@ var path = require('path');
 var mime = require('mime');
 
 
-const almacenamiento = multer.diskStorage({
+const storage = multer.diskStorage({
     destination: 'carga/',
     filename: function(req, file, callback) {
         callback("", Date.now() + "." + mimeTypes.extension(file.mimetype));
@@ -17,7 +17,7 @@ const almacenamiento = multer.diskStorage({
 
 //middleware
 const upload = multer({
-    almacenamiento: almacenamiento
+    storage: storage
 });
 
 app.get('/', (req, res) => {
