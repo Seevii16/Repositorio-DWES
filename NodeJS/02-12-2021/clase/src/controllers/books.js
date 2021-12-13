@@ -15,8 +15,13 @@ function books(req, res, next) {
     });
 
     const paginacion = filteredBooks.slice(parseInt(offset), parseInt(offset) + parseInt(limit));
+    const orden = paginacion.so
     return res.send(paginacion);
 
+}
+
+function comparar(a, b) {
+    return a - b
 }
 module.exports = {
     books
