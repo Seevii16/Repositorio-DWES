@@ -8,7 +8,7 @@ async function createNote(req, res) {
     const name = req.params.name;
     const content = req.body;
     console.log(allNotes);
-    return fs.writeFileSync(`${giveNotes}/${file}/${name}.note`, `${content.message}`);
+    return fs.writeFileSync(`${giveNotes}/${file}/${name}.note`, `${content.content}`);
 }
 
 module.exports = { createNote };

@@ -13,7 +13,7 @@ async function updateNote(req, res, verify) {
 
     for (let i = 0; i <= allNotes.length; i++) {
         if (i == id) {
-            fs.writeFileSync(`${giveNotes}/${file}/${allNotes[i].name}`, `${content.message}`);
+            fs.writeFileSync(`${giveNotes}/${file}/${allNotes[i].name}`, `${content.content}`);
             console.log(allNotes);
         }
     }
