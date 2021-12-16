@@ -15,5 +15,5 @@ server.listen(port, () => {
 
 
 router.get("/public", (req, res) => {
-    res.status(200).send('Acceso público que permitirá el acceso a invitados debes registrarte antes para utilizarlo');
+    res.status(200).send('Acceso Publico si quieres acceder al contenido registrese ^^');
 });
