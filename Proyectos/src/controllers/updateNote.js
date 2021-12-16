@@ -4,8 +4,8 @@ const file = 'data';
 const { allNotes } = require("./verifyAdmin");
 
 
-async function updateNote(req, res, verify) {
-    const name = req.params.name;
+async function updateNote(req, res) {
+
     const content = req.body;
     const id = req.params.id;
 
