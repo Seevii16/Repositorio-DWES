@@ -1,13 +1,13 @@
 const express = require('express');
 const app = express();
 
-const productsRoute = require('./routes/products')
+const dataRoute = require('./routes/data')
 
 require('./bbdd')
 
 app.use(express.json())
 
-app.use(productsRoute);
+app.use(dataRoute);
 
 app.listen(3000);
 
